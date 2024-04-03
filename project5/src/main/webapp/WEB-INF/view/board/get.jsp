@@ -158,6 +158,8 @@
 	            
 	            <%@ include file = "../reply/reply_modal_ui.jsp" %>
 	            
+	            <script type="text/javascript" src="/resources/js/reply/reply_new_btn_load.js"></script>
+	            
 <%-- 	            <%@ include file = "../reply/reply_modal.jsp" %> --%>
 	            
 <%-- 				<%@ include file = "../reply/reply_list.jsp" %> --%>
