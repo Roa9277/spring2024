@@ -1,8 +1,9 @@
 package com.example.service;
 
-import java.util.List;
+//import java.util.List;
 
 import com.example.domain.Criteria;
+import com.example.domain.ReplyPageDTO;
 import com.example.domain.ReplyVO;
 
 public interface ReplyService {
@@ -15,5 +16,8 @@ public interface ReplyService {
 	
 	public int remove(Long rno);
 	
-	public List<ReplyVO> getList(Criteria cri, Long bno);
+//	public List<ReplyVO> getList(Criteria cri, Long bno);
+	
+	public ReplyPageDTO getListPage(Criteria cri, Long bno);
+	
 }

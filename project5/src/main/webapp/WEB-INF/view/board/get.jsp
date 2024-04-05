@@ -160,15 +160,15 @@
 	            
 	            <script type="text/javascript" src="/resources/js/reply/reply_new_btn_load.js"></script>
 	            
-<%-- 	            <%@ include file = "../reply/reply_modal.jsp" %> --%>
-	            
-<%-- 				<%@ include file = "../reply/reply_list.jsp" %> --%>
-				
 				<script type="text/javascript" src="/resources/js/reply/reply_ajax.js"></script>
 				
 				<script type="text/javascript" src="/resources/js/reply/reply_list.js"></script>
 				
 				<script type="text/javascript" src="/resources/js/reply/reply_list_load.js"></script>
+				
+				<script type="text/javascript" src="/resources/js/reply/reply_list_click_load.js"></script>
+				
+				<script type="text/javascript" src="/resources/js/reply/reply_page_click_load.js"></script>
 				
 <%-- 				<%@ include file = "../reply/reply_ajax_test.jsp" %> --%>
             </div>

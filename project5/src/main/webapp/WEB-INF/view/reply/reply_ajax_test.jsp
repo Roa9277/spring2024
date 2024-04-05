@@ -6,8 +6,8 @@
 	console.log("==========================");
 	console.log("AJAX TEST");
 	
-	var bnoValue = '<c:out value="${board.bno}"/>';
-// 		var bnoValue = '14';
+// 	var bnoValue = '<c:out value="${board.bno}"/>';
+		var bnoValue = '14';
 			
 	// 1. 댓글 목록 테스트
 // 	replyService.getList(
@@ -16,10 +16,26 @@
 // 		,
 // 		function(list){
 			
-// 			for (var i = 0, len = list.length || 0; i < len; i++ ) {
+// 			console.log("replyCnt: " + replyCnt);
+			
+// 			for (var i = 0, len = list.length|| 0; i < len; i++ ) {
 // 				console.log(list[i]);
 // 			}
 // 		});
+	
+	// new - 1. 댓글 목록 테스트
+	replyService.getList(
+			
+		{bno:bnoValue, page:1}
+		,
+		function(replyCnt, list){
+			
+			console.log("replyCnt: " + replyCnt);
+			
+			for (var i = 0, len = list.length|| 0; i < len; i++ ) {
+				console.log(list[i]);
+			}
+		});
 	
 // 	2. 댓글 입력 테스트
 // 	replyService.add(

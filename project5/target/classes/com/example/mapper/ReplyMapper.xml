@@ -55,8 +55,8 @@
 		
 		FROM (
 		
-			SELECT  /*+INDEX(tb1_reply index_reply) */
-				rownum rn, rno, bno, reply, replyer, replyDate, updatedate
+			SELECT  /*+INDEX(tb1_reply index_reply) */rownum rn,
+					rno, bno, reply, replyer, replyDate, updatedate
 			FROM tb1_reply
 			WHERE bno = #{bno} 
 			AND rno > 0 
@@ -70,11 +70,17 @@
 		
 	</select>
 	
-	<select id="getTotalCount" resultType="int">
+<!-- 	<select id="getTotalCount" resultType="int"> -->
 	
-		SELECT COUNT(*) FROM tb1_board WHERE bno > 0
+<!-- 		SELECT COUNT(*) FROM tb1_board WHERE bno > 0 -->
 	
-	</select>
+<!-- 	</select> -->
+
+		<select id="getCountByBno" resultType="int">
+	
+			SELECT COUNT(*) FROM tb1_board WHERE bno > 0
+	
+		</select>
 
 </mapper>
 
