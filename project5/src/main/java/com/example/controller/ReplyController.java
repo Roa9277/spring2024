@@ -110,8 +110,8 @@ public class ReplyController {
 //	}
 	
 	@GetMapping(value = "/pages/{bno}/{page}",
-			produces = { MediaType.APPLICATION_XML_VALUE,
-						 MediaType.APPLICATION_JSON_VALUE})
+				produces = { MediaType.APPLICATION_XML_VALUE,
+							 MediaType.APPLICATION_JSON_VALUE})
 	public ResponseEntity<ReplyPageDTO> getList ( @PathVariable("page") int page,
 												  @PathVariable("bno") Long bno) 
 	{

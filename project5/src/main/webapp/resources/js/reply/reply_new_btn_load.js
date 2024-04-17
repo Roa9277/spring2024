@@ -33,8 +33,8 @@ $(function(){
 	// 등록 버튼 처리
 	// var bnoValue = '<c:out value="${board.bno}"/>';
 	var bnoValue = $("#operForm").find("#bno").val();
-	
 	var replyUL = $(".chat");
+	var pageUI = $(".panel-footer");
 	
 	modalRegisterBtn.on("click",function(e){
 		
@@ -51,7 +51,7 @@ $(function(){
 			modal.modal("hide");
 			
 			// showList(1);
-			repyList.showList(1, bnoValue, replyUL);
+			replyList.showList(-1, bnoValue, replyUL, pageUI);
 			
 		});
 	});

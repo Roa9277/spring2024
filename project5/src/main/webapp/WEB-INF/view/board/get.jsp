@@ -149,7 +149,9 @@
 	            			</div>
 	            			<!-- /.panel .chat-panel -->
 	            			
-	            			<div class="panel-footer"></div>
+	            			<div class="panel-footer">
+	            				<input type='hidden' id='pageNumReply' value='1'>
+	            			</div>
 	            		</div>
 	            		
 	            	</div>

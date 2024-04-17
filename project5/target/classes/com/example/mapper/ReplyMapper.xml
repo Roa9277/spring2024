@@ -78,7 +78,7 @@
 
 		<select id="getCountByBno" resultType="int">
 	
-			SELECT COUNT(*) FROM tb1_board WHERE bno > 0
+			SELECT COUNT(rno) FROM tb1_reply WHERE bno = #{bno}
 	
 		</select>
 
